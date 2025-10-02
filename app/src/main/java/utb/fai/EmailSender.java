@@ -39,7 +39,7 @@ public class EmailSender {
 
       }
 
-      socket.close();
+      
     } catch (Exception e) {
       e.printStackTrace();
     }
@@ -58,7 +58,7 @@ public class EmailSender {
 
       byte[] inputBuffer = new byte[1024];
       int inputLength = 0;
-      String zprava = "MAIL FROM: i_schober@utb.cz\r\n";
+   String zprava = String.format("MAIL FROM: %s\r\n", from);
       byte[] data = zprava.getBytes();
 
       OutputStream out = socket.getOutputStream();
@@ -73,7 +73,7 @@ public class EmailSender {
 
       }
 
-      zprava = "RCPT TO: i_schober@utb.cz\r\n";
+            zprava = String.format("RCPT TO: %s\r\n", to);
       data = zprava.getBytes();
       out.write(data, 0, data.length);
       out.flush();
@@ -100,12 +100,12 @@ public class EmailSender {
       }
 
       // Posílání obsahu emailu
-      zprava = "From: i_schober@utb.cz\r\n" +
-          "To: i_schober@utb.cz\r\n" +
-          "Subject: Test email\r\n" +
+            zprava = String.format("From: %s\r\n" +
+          "To: %s\r\n" +
+          "Subject: %s\r\n" +
           "\r\n" +
-          "Toto je obsah emailu.\r\n" +
-          ".\r\n";
+          "%s\r\n" +
+          ".\r\n", from, to, subject, text);
       data = zprava.getBytes();
       out.write(data, 0, data.length);
       out.flush();
@@ -127,7 +127,14 @@ public class EmailSender {
   /*
    * Sends QUIT and closes the socket
    */
-  public void close() {
+  public void close() 
+  {
 
+    try {
+         socket.close();
+    } catch (Exception e) {
+      e.printStackTrace();
+    }
+ 
   }
 }
