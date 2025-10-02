@@ -1,0 +1,137 @@
+[14:37:35][PluginLoader][INFO] No plugins found.
+[14:37:35][NATTCore][INFO] NATT CORE initialization done
+Version: 1.7.0 
+Configuration path: https://gitlab.com/ap5vs/test-config/email-sender-config/-/raw/main/test-config-1.yaml?ref_type=heads
+Configuration loading mode: FROM URL
+[14:37:35][NATTCore][INFO] Working directory path: /Users/ivanschober/Library/CloudStorage/SynologyDrive-home/Programovani/Java/email-sender
+[14:37:35][NATTCore][INFO] Start loading of the configuration file ...
+[14:37:36][NetworkIO][INFO] Yaml data has been loaded from network location (https://gitlab.com/ap5vs/test-config/email-sender-config/-/raw/main/test-config-1.yaml?ref_type=heads)
+[14:37:36][NATTCore][INFO] Configuration loading done
+[14:37:36][NATTCore][INFO] Start building test structure according to the configuration ...
+[14:37:36][NATTCore][INFO] Test structure ...
+[14:37:36][NATTCore][INFO] Test structure building done
+[14:37:36][NATTCore][INFO] Start test executing ...
+[14:37:36][TestReportGenerator][INFO] Extenet reports generated. Final report will be saved to file: test_report.html
+[14:37:36][NATTCore][INFO] Starts execution on the root keyword  ...
+[14:37:36][MessageBuffer][INFO] Message buffer created for module with name: server-1
+[14:37:36][SMTPEmailServer][INFO] (server-1) SMTP Email Server is listening on port: 9999
+[14:37:36][TestSuiteKw][INFO] Test case 'Test odeslání emailu' starts executing now
+[14:37:36][MessageBuffer][INFO] Message buffer created for module with name: default
+[14:37:36][ExternalProgramRunner][INFO] (default) Run external app with command: java -jar app/build/libs/app.jar localhost 9999 sender@email.com recipient@email.com Subject1 'Text Message'
+[14:37:36][ProcessManager][INFO] New PID (27950) added to file
+[14:37:36][WaitUntilKw][INFO] Waiting for action. Actions count: 1, Time out: 5000 ms
+[14:37:37][MessageBuffer][INFO] Message added to buffer [ Mod: default | Tag:  ] Content: '220 smtp.utb.cz ESMTP Postfix (Debian/GNU)'
+[14:37:37][MessageBuffer][INFO] Message added to buffer [ Mod: default | Tag:  ] Content: '250-smtp.utb.cz'
+[14:37:37][MessageBuffer][INFO] Message added to buffer [ Mod: default | Tag:  ] Content: '250-PIPELINING'
+[14:37:37][MessageBuffer][INFO] Message added to buffer [ Mod: default | Tag:  ] Content: '250-SIZE 33554432'
+[14:37:37][MessageBuffer][INFO] Message added to buffer [ Mod: default | Tag:  ] Content: '250-VRFY'
+[14:37:37][MessageBuffer][INFO] Message added to buffer [ Mod: default | Tag:  ] Content: '250-ETRN'
+[14:37:37][MessageBuffer][INFO] Message added to buffer [ Mod: default | Tag:  ] Content: '250-STARTTLS'
+[14:37:37][MessageBuffer][INFO] Message added to buffer [ Mod: default | Tag:  ] Content: '250-ENHANCEDSTATUSCODES'
+[14:37:37][MessageBuffer][INFO] Message added to buffer [ Mod: default | Tag:  ] Content: '250-8BITMIME'
+[14:37:37][MessageBuffer][INFO] Message added to buffer [ Mod: default | Tag:  ] Content: '250-DSN'
+[14:37:37][MessageBuffer][INFO] Message added to buffer [ Mod: default | Tag:  ] Content: '250-SMTPUTF8'
+[14:37:37][MessageBuffer][INFO] Message added to buffer [ Mod: default | Tag:  ] Content: '250 CHUNKING'
+[14:37:37][MessageBuffer][INFO] Message added to buffer [ Mod: default | Tag:  ] Content: '250 2.1.0 Ok'
+[14:37:38][MessageBuffer][INFO] Message added to buffer [ Mod: default | Tag:  ] Content: '250 2.1.5 Ok'
+[14:37:39][MessageBuffer][INFO] Message added to buffer [ Mod: default | Tag:  ] Content: '354 End data with <CR><LF>.<CR><LF>'
+[14:37:39][MessageBuffer][INFO] Message added to buffer [ Mod: default | Tag:  ] Content: '250 2.0.0 Ok: queued as BCB80100F90'
+[14:37:40][ProcessManager][INFO] PID (27950) removed from file
+[14:37:40][ExternalProgramRunner][INFO] (default) External application ends with exit code 0
+[14:37:41][WaitUntilKw][WARNING] Timeout.. Action was not invoked!
+[14:37:41][NATTContext][INFO] Data has been stored in to the variable 'var-1'. Data value: 0
+[14:37:41][AssertEqualsKw][WARNING] Assertion failed. True was expected as the result. Condition: (Expected value '1,000000' must be same as the value of the variable '0')
+[14:37:41][WaitKw][INFO] Waiting: 500 ms
+[14:37:42][TestSuiteKw][ERROR] Test suite 'Zakladní test odesílání Emailů' - Test case 'Test odeslání emailu' failed
+[14:37:42][MessageBuffer][INFO] Message buffer cleared
+[14:37:42][TestSuiteKw][INFO] Test case 'Test obsahu emailu 1' starts executing now
+[14:37:42][ExternalProgramRunner][INFO] (default) Run external app with command: java -jar app/build/libs/app.jar localhost 9999 sender@email.com recipient@email.com Subject1 'Text Message'
+[14:37:42][ProcessManager][INFO] New PID (27973) added to file
+[14:37:42][WaitUntilKw][INFO] Waiting for action. Actions count: 1, Time out: 5000 ms
+[14:37:43][MessageBuffer][INFO] Message added to buffer [ Mod: default | Tag:  ] Content: '220 smtp.utb.cz ESMTP Postfix (Debian/GNU)'
+[14:37:43][MessageBuffer][INFO] Message added to buffer [ Mod: default | Tag:  ] Content: '250-smtp.utb.cz'
+[14:37:43][MessageBuffer][INFO] Message added to buffer [ Mod: default | Tag:  ] Content: '250-PIPELINING'
+[14:37:43][MessageBuffer][INFO] Message added to buffer [ Mod: default | Tag:  ] Content: '250-SIZE 33554432'
+[14:37:43][MessageBuffer][INFO] Message added to buffer [ Mod: default | Tag:  ] Content: '250-VRFY'
+[14:37:43][MessageBuffer][INFO] Message added to buffer [ Mod: default | Tag:  ] Content: '250-ETRN'
+[14:37:43][MessageBuffer][INFO] Message added to buffer [ Mod: default | Tag:  ] Content: '250-STARTTLS'
+[14:37:43][MessageBuffer][INFO] Message added to buffer [ Mod: default | Tag:  ] Content: '250-ENHANCEDSTATUSCODES'
+[14:37:43][MessageBuffer][INFO] Message added to buffer [ Mod: default | Tag:  ] Content: '250-8BITMIME'
+[14:37:43][MessageBuffer][INFO] Message added to buffer [ Mod: default | Tag:  ] Content: '250-DSN'
+[14:37:43][MessageBuffer][INFO] Message added to buffer [ Mod: default | Tag:  ] Content: '250-SMTPUTF8'
+[14:37:43][MessageBuffer][INFO] Message added to buffer [ Mod: default | Tag:  ] Content: '250 CHUNKING'
+[14:37:43][MessageBuffer][INFO] Message added to buffer [ Mod: default | Tag:  ] Content: '250 2.1.0 Ok'
+[14:37:44][MessageBuffer][INFO] Message added to buffer [ Mod: default | Tag:  ] Content: '250 2.1.5 Ok'
+[14:37:45][MessageBuffer][INFO] Message added to buffer [ Mod: default | Tag:  ] Content: '354 End data with <CR><LF>.<CR><LF>'
+[14:37:45][MessageBuffer][INFO] Message added to buffer [ Mod: default | Tag:  ] Content: '250 2.0.0 Ok: queued as F148B100F90'
+[14:37:46][ProcessManager][INFO] PID (27973) removed from file
+[14:37:46][ExternalProgramRunner][INFO] (default) External application ends with exit code 0
+[14:37:47][WaitUntilKw][WARNING] Timeout.. Action was not invoked!
+[14:37:47][NATTContext][INFO] Data has been stored in to the variable 'var-1'. Data value: 
+[14:37:47][AssertEqualsKw][WARNING] Assertion failed. True was expected as the result. Condition: (Value of variable '' must equals expected text 'Text Message')
+[14:37:47][WaitKw][INFO] Waiting: 500 ms
+[14:37:48][TestSuiteKw][ERROR] Test suite 'Zakladní test odesílání Emailů' - Test case 'Test obsahu emailu 1' failed
+[14:37:48][MessageBuffer][INFO] Message buffer cleared
+[14:37:48][TestSuiteKw][INFO] Test case 'Test obsahu emailu 2' starts executing now
+[14:37:48][ExternalProgramRunner][INFO] (default) Run external app with command: java -jar app/build/libs/app.jar localhost 9999 sender@email.com recipient@email.com Subject1111 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin mattis lacinia justo. Curabitur bibendum justo non orci. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.'
+[14:37:48][ProcessManager][INFO] New PID (27999) added to file
+[14:37:48][WaitUntilKw][INFO] Waiting for action. Actions count: 1, Time out: 5000 ms
+[14:37:49][MessageBuffer][INFO] Message added to buffer [ Mod: default | Tag:  ] Content: '220 smtp.utb.cz ESMTP Postfix (Debian/GNU)'
+[14:37:49][MessageBuffer][INFO] Message added to buffer [ Mod: default | Tag:  ] Content: '250-smtp.utb.cz'
+[14:37:49][MessageBuffer][INFO] Message added to buffer [ Mod: default | Tag:  ] Content: '250-PIPELINING'
+[14:37:49][MessageBuffer][INFO] Message added to buffer [ Mod: default | Tag:  ] Content: '250-SIZE 33554432'
+[14:37:49][MessageBuffer][INFO] Message added to buffer [ Mod: default | Tag:  ] Content: '250-VRFY'
+[14:37:49][MessageBuffer][INFO] Message added to buffer [ Mod: default | Tag:  ] Content: '250-ETRN'
+[14:37:49][MessageBuffer][INFO] Message added to buffer [ Mod: default | Tag:  ] Content: '250-STARTTLS'
+[14:37:49][MessageBuffer][INFO] Message added to buffer [ Mod: default | Tag:  ] Content: '250-ENHANCEDSTATUSCODES'
+[14:37:49][MessageBuffer][INFO] Message added to buffer [ Mod: default | Tag:  ] Content: '250-8BITMIME'
+[14:37:49][MessageBuffer][INFO] Message added to buffer [ Mod: default | Tag:  ] Content: '250-DSN'
+[14:37:49][MessageBuffer][INFO] Message added to buffer [ Mod: default | Tag:  ] Content: '250-SMTPUTF8'
+[14:37:49][MessageBuffer][INFO] Message added to buffer [ Mod: default | Tag:  ] Content: '250 CHUNKING'
+[14:37:50][MessageBuffer][INFO] Message added to buffer [ Mod: default | Tag:  ] Content: '250 2.1.0 Ok'
+[14:37:50][MessageBuffer][INFO] Message added to buffer [ Mod: default | Tag:  ] Content: '250 2.1.5 Ok'
+[14:37:51][MessageBuffer][INFO] Message added to buffer [ Mod: default | Tag:  ] Content: '354 End data with <CR><LF>.<CR><LF>'
+[14:37:52][MessageBuffer][INFO] Message added to buffer [ Mod: default | Tag:  ] Content: '250 2.0.0 Ok: queued as 30D14100F90'
+[14:37:52][ProcessManager][INFO] PID (27999) removed from file
+[14:37:52][ExternalProgramRunner][INFO] (default) External application ends with exit code 0
+[14:37:53][WaitUntilKw][WARNING] Timeout.. Action was not invoked!
+[14:37:53][NATTContext][INFO] Data has been stored in to the variable 'var-1'. Data value: 
+[14:37:53][AssertEqualsKw][WARNING] Assertion failed. True was expected as the result. Condition: (Value of variable '' must contains expected text 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin mattis lacinia justo. Curabitur bibendum justo non orci. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.')
+[14:37:53][WaitKw][INFO] Waiting: 500 ms
+[14:37:54][TestSuiteKw][ERROR] Test suite 'Zakladní test odesílání Emailů' - Test case 'Test obsahu emailu 2' failed
+[14:37:54][MessageBuffer][INFO] Message buffer cleared
+[14:37:55][TestSuiteKw][INFO] Test case 'Test odeslání neplatného emailu' starts executing now
+[14:37:55][ExternalProgramRunner][INFO] (default) Run external app with command: java -jar app/build/libs/app.jar localhost 9999 sender@email.com recipient@email.com
+[14:37:55][ProcessManager][INFO] New PID (28022) added to file
+[14:37:55][WaitKw][INFO] Waiting: 3000 ms
+[14:37:55][MessageBuffer][INFO] Message added to buffer [ Mod: default | Tag:  ] Content: '220 smtp.utb.cz ESMTP Postfix (Debian/GNU)'
+[14:37:55][MessageBuffer][INFO] Message added to buffer [ Mod: default | Tag:  ] Content: '250-smtp.utb.cz'
+[14:37:55][MessageBuffer][INFO] Message added to buffer [ Mod: default | Tag:  ] Content: '250-PIPELINING'
+[14:37:55][MessageBuffer][INFO] Message added to buffer [ Mod: default | Tag:  ] Content: '250-SIZE 33554432'
+[14:37:55][MessageBuffer][INFO] Message added to buffer [ Mod: default | Tag:  ] Content: '250-VRFY'
+[14:37:55][MessageBuffer][INFO] Message added to buffer [ Mod: default | Tag:  ] Content: '250-ETRN'
+[14:37:55][MessageBuffer][INFO] Message added to buffer [ Mod: default | Tag:  ] Content: '250-STARTTLS'
+[14:37:55][MessageBuffer][INFO] Message added to buffer [ Mod: default | Tag:  ] Content: '250-ENHANCEDSTATUSCODES'
+[14:37:55][MessageBuffer][INFO] Message added to buffer [ Mod: default | Tag:  ] Content: '250-8BITMIME'
+[14:37:55][MessageBuffer][INFO] Message added to buffer [ Mod: default | Tag:  ] Content: '250-DSN'
+[14:37:55][MessageBuffer][INFO] Message added to buffer [ Mod: default | Tag:  ] Content: '250-SMTPUTF8'
+[14:37:55][MessageBuffer][INFO] Message added to buffer [ Mod: default | Tag:  ] Content: '250 CHUNKING'
+[14:37:56][MessageBuffer][INFO] Message added to buffer [ Mod: default | Tag:  ] Content: '250 2.1.0 Ok'
+[14:37:56][MessageBuffer][INFO] Message added to buffer [ Mod: default | Tag:  ] Content: '250 2.1.5 Ok'
+[14:37:57][MessageBuffer][INFO] Message added to buffer [ Mod: default | Tag:  ] Content: '354 End data with <CR><LF>.<CR><LF>'
+[14:37:58][NATTContext][INFO] Data has been stored in to the variable 'var-1'. Data value: 0
+[14:37:58][WaitKw][INFO] Waiting: 500 ms
+[14:37:58][MessageBuffer][INFO] Message added to buffer [ Mod: default | Tag:  ] Content: '250 2.0.0 Ok: queued as 5ABD2100F90'
+[14:37:58][TestSuiteKw][INFO] Test suite 'Zakladní test odesílání Emailů' - Test case 'Test odeslání neplatného emailu' passed
+[14:37:58][ProcessManager][INFO] PID (28022) removed from file
+[14:37:58][ExternalProgramRunner][INFO] (default) External application ends with exit code 0
+[14:37:58][MessageBuffer][INFO] Message buffer cleared
+[14:37:59][MessageBuffer][INFO] Message buffer cleared
+[14:37:59][MessageBuffer][INFO] Message buffer cleared
+[14:37:59][SMTPEmailServer][INFO] (server-1) SMTP email server [server-1] terminated
+[14:37:59][NATTCore][INFO] Test executing finished
+[14:37:59][NATTCore][INFO] Start generating test report
+[14:37:59][TestReportGenerator][INFO] Report saved to file
+[14:37:59][NATTCore][WARNING] Failed test cases: "Test odeslání emailu", "Test obsahu emailu 1", "Test obsahu emailu 2"
+[14:37:59][NATTCore][INFO] Final score: 1,000000
+[14:37:59][NATTCore][ERROR] Testing done. Leaving status: FAILED
