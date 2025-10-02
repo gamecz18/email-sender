@@ -6,7 +6,7 @@ import java.io.*;
 public class EmailSender {
   /*
    * Constructor opens Socket to host/port. If the Socket throws an exception
-   * during opening,nj
+   * during opening,
    * the exception is not handled in the constructor.
    */
   Socket socket;
@@ -17,7 +17,7 @@ public class EmailSender {
       socket = new Socket(host, port);
       OutputStream out = socket.getOutputStream();
       InputStream in = socket.getInputStream();
-      String zprava = "EHLO localhost\r\n";
+      String zprava = String.format("EHLO %s\r\n", host);
 
       byte[] data = zprava.getBytes();
       byte[] inputBuffer = new byte[1024];
@@ -41,7 +41,7 @@ public class EmailSender {
 
       
     } catch (Exception e) {
-      e.printStackTrace();
+     throw new IOException("Failed to send email", e);
     }
 
   }
@@ -58,7 +58,7 @@ public class EmailSender {
 
       byte[] inputBuffer = new byte[1024];
       int inputLength = 0;
-   String zprava = String.format("MAIL FROM: %s\r\n", from);
+   String zprava = String.format("MAIL FROM:<%s>\r\n", from);
       byte[] data = zprava.getBytes();
 
       OutputStream out = socket.getOutputStream();
@@ -73,7 +73,7 @@ public class EmailSender {
 
       }
 
-            zprava = String.format("RCPT TO: %s\r\n", to);
+            zprava = String.format("RCPT TO:<%s>\r\n", to);
       data = zprava.getBytes();
       out.write(data, 0, data.length);
       out.flush();
@@ -99,7 +99,7 @@ public class EmailSender {
 
       }
 
-      // Posílání obsahu emailu
+
             zprava = String.format("From: %s\r\n" +
           "To: %s\r\n" +
           "Subject: %s\r\n" +
@@ -131,7 +131,13 @@ public class EmailSender {
   {
 
     try {
-         socket.close();
+        String zprava = "QUIT\r\n";
+        byte[] data = zprava.getBytes();
+        OutputStream out = socket.getOutputStream();
+        out.write(data, 0, data.length);
+        out.flush();
+        Thread.sleep(500);
+        socket.close();
     } catch (Exception e) {
       e.printStackTrace();
     }

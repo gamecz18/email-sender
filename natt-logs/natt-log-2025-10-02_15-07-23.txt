@@ -1,0 +1,111 @@
+[15:07:23][PluginLoader][INFO] No plugins found.
+[15:07:23][NATTCore][INFO] NATT CORE initialization done
+Version: 1.7.0 
+Configuration path: https://gitlab.com/ap5vs/test-config/email-sender-config/-/raw/main/test-config-1.yaml?ref_type=heads
+Configuration loading mode: FROM URL
+[15:07:23][NATTCore][INFO] Working directory path: /Users/ivanschober/Library/CloudStorage/SynologyDrive-home/Programovani/Java/email-sender
+[15:07:23][NATTCore][INFO] Start loading of the configuration file ...
+[15:07:24][NetworkIO][INFO] Yaml data has been loaded from network location (https://gitlab.com/ap5vs/test-config/email-sender-config/-/raw/main/test-config-1.yaml?ref_type=heads)
+[15:07:24][NATTCore][INFO] Configuration loading done
+[15:07:24][NATTCore][INFO] Start building test structure according to the configuration ...
+[15:07:24][NATTCore][INFO] Test structure ...
+[15:07:24][NATTCore][INFO] Test structure building done
+[15:07:24][NATTCore][INFO] Start test executing ...
+[15:07:24][TestReportGenerator][INFO] Extenet reports generated. Final report will be saved to file: test_report.html
+[15:07:25][NATTCore][INFO] Starts execution on the root keyword  ...
+[15:07:25][MessageBuffer][INFO] Message buffer created for module with name: server-1
+[15:07:25][SMTPEmailServer][INFO] (server-1) SMTP Email Server is listening on port: 9999
+[15:07:25][TestSuiteKw][INFO] Test case 'Test odeslání emailu' starts executing now
+[15:07:25][MessageBuffer][INFO] Message buffer created for module with name: default
+[15:07:25][ExternalProgramRunner][INFO] (default) Run external app with command: java -jar app/build/libs/app.jar localhost 9999 sender@email.com recipient@email.com Subject1 'Text Message'
+[15:07:25][ProcessManager][INFO] New PID (32706) added to file
+[15:07:25][WaitUntilKw][INFO] Waiting for action. Actions count: 1, Time out: 5000 ms
+[15:07:25][MessageBuffer][INFO] Message added to buffer [ Mod: default | Tag:  ] Content: '220 /127.0.0.1 GreenMail SMTP Service v1.6.1 ready'
+[15:07:25][MessageBuffer][INFO] Message added to buffer [ Mod: default | Tag:  ] Content: '250-/127.0.0.1'
+[15:07:25][MessageBuffer][INFO] Message added to buffer [ Mod: default | Tag:  ] Content: '250 AUTH PLAIN LOGIN'
+[15:07:26][MessageBuffer][INFO] Message added to buffer [ Mod: default | Tag:  ] Content: '501 Required syntax: 'MAIL FROM:<email@host>''
+[15:07:26][MessageBuffer][INFO] Message added to buffer [ Mod: default | Tag:  ] Content: '501 Required syntax: 'RCPT TO:<email@host>''
+[15:07:27][MessageBuffer][INFO] Message added to buffer [ Mod: default | Tag:  ] Content: '503 MAIL command required'
+[15:07:28][MessageBuffer][INFO] Message added to buffer [ Mod: default | Tag:  ] Content: '500 Invalid command. Must be 4 characters'
+[15:07:28][MessageBuffer][INFO] Message added to buffer [ Mod: default | Tag:  ] Content: '500 Invalid command. Must be 4 characters'
+[15:07:28][MessageBuffer][INFO] Message added to buffer [ Mod: default | Tag:  ] Content: '500 Invalid command. Must be 4 characters'
+[15:07:28][MessageBuffer][INFO] Message added to buffer [ Mod: default | Tag:  ] Content: '500 Invalid command. Must be 4 characters'
+[15:07:28][MessageBuffer][INFO] Message added to buffer [ Mod: default | Tag:  ] Content: '500 Command not recognized'
+[15:07:28][MessageBuffer][INFO] Message added to buffer [ Mod: default | Tag:  ] Content: '500 Invalid command. Must be 4 characters'
+[15:07:28][ProcessManager][INFO] PID (32706) removed from file
+[15:07:28][ExternalProgramRunner][INFO] (default) External application ends with exit code 0
+[15:07:30][WaitUntilKw][WARNING] Timeout.. Action was not invoked!
+[15:07:30][NATTContext][INFO] Data has been stored in to the variable 'var-1'. Data value: 0
+[15:07:30][AssertEqualsKw][WARNING] Assertion failed. True was expected as the result. Condition: (Expected value '1,000000' must be same as the value of the variable '0')
+[15:07:30][WaitKw][INFO] Waiting: 500 ms
+[15:07:30][TestSuiteKw][ERROR] Test suite 'Zakladní test odesílání Emailů' - Test case 'Test odeslání emailu' failed
+[15:07:30][MessageBuffer][INFO] Message buffer cleared
+[15:07:31][TestSuiteKw][INFO] Test case 'Test obsahu emailu 1' starts executing now
+[15:07:31][ExternalProgramRunner][INFO] (default) Run external app with command: java -jar app/build/libs/app.jar localhost 9999 sender@email.com recipient@email.com Subject1 'Text Message'
+[15:07:31][ProcessManager][INFO] New PID (32730) added to file
+[15:07:31][WaitUntilKw][INFO] Waiting for action. Actions count: 1, Time out: 5000 ms
+[15:07:31][MessageBuffer][INFO] Message added to buffer [ Mod: default | Tag:  ] Content: '220 /127.0.0.1 GreenMail SMTP Service v1.6.1 ready'
+[15:07:31][MessageBuffer][INFO] Message added to buffer [ Mod: default | Tag:  ] Content: '250-/127.0.0.1'
+[15:07:31][MessageBuffer][INFO] Message added to buffer [ Mod: default | Tag:  ] Content: '250 AUTH PLAIN LOGIN'
+[15:07:32][MessageBuffer][INFO] Message added to buffer [ Mod: default | Tag:  ] Content: '501 Required syntax: 'MAIL FROM:<email@host>''
+[15:07:32][MessageBuffer][INFO] Message added to buffer [ Mod: default | Tag:  ] Content: '501 Required syntax: 'RCPT TO:<email@host>''
+[15:07:33][MessageBuffer][INFO] Message added to buffer [ Mod: default | Tag:  ] Content: '503 MAIL command required'
+[15:07:34][MessageBuffer][INFO] Message added to buffer [ Mod: default | Tag:  ] Content: '500 Invalid command. Must be 4 characters'
+[15:07:34][MessageBuffer][INFO] Message added to buffer [ Mod: default | Tag:  ] Content: '500 Invalid command. Must be 4 characters'
+[15:07:34][MessageBuffer][INFO] Message added to buffer [ Mod: default | Tag:  ] Content: '500 Invalid command. Must be 4 characters'
+[15:07:34][MessageBuffer][INFO] Message added to buffer [ Mod: default | Tag:  ] Content: '500 Invalid command. Must be 4 characters'
+[15:07:34][MessageBuffer][INFO] Message added to buffer [ Mod: default | Tag:  ] Content: '500 Command not recognized'
+[15:07:34][MessageBuffer][INFO] Message added to buffer [ Mod: default | Tag:  ] Content: '500 Invalid command. Must be 4 characters'
+[15:07:34][ProcessManager][INFO] PID (32730) removed from file
+[15:07:34][ExternalProgramRunner][INFO] (default) External application ends with exit code 0
+[15:07:36][WaitUntilKw][WARNING] Timeout.. Action was not invoked!
+[15:07:36][NATTContext][INFO] Data has been stored in to the variable 'var-1'. Data value: 
+[15:07:36][AssertEqualsKw][WARNING] Assertion failed. True was expected as the result. Condition: (Value of variable '' must equals expected text 'Text Message')
+[15:07:36][WaitKw][INFO] Waiting: 500 ms
+[15:07:36][TestSuiteKw][ERROR] Test suite 'Zakladní test odesílání Emailů' - Test case 'Test obsahu emailu 1' failed
+[15:07:36][MessageBuffer][INFO] Message buffer cleared
+[15:07:37][TestSuiteKw][INFO] Test case 'Test obsahu emailu 2' starts executing now
+[15:07:37][ExternalProgramRunner][INFO] (default) Run external app with command: java -jar app/build/libs/app.jar localhost 9999 sender@email.com recipient@email.com Subject1111 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin mattis lacinia justo. Curabitur bibendum justo non orci. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.'
+[15:07:37][ProcessManager][INFO] New PID (32752) added to file
+[15:07:37][WaitUntilKw][INFO] Waiting for action. Actions count: 1, Time out: 5000 ms
+[15:07:37][MessageBuffer][INFO] Message added to buffer [ Mod: default | Tag:  ] Content: '220 /127.0.0.1 GreenMail SMTP Service v1.6.1 ready'
+[15:07:37][MessageBuffer][INFO] Message added to buffer [ Mod: default | Tag:  ] Content: '250-/127.0.0.1'
+[15:07:37][MessageBuffer][INFO] Message added to buffer [ Mod: default | Tag:  ] Content: '250 AUTH PLAIN LOGIN'
+[15:07:38][MessageBuffer][INFO] Message added to buffer [ Mod: default | Tag:  ] Content: '501 Required syntax: 'MAIL FROM:<email@host>''
+[15:07:39][MessageBuffer][INFO] Message added to buffer [ Mod: default | Tag:  ] Content: '501 Required syntax: 'RCPT TO:<email@host>''
+[15:07:40][MessageBuffer][INFO] Message added to buffer [ Mod: default | Tag:  ] Content: '503 MAIL command required'
+[15:07:40][MessageBuffer][INFO] Message added to buffer [ Mod: default | Tag:  ] Content: '500 Invalid command. Must be 4 characters'
+[15:07:40][MessageBuffer][INFO] Message added to buffer [ Mod: default | Tag:  ] Content: '500 Invalid command. Must be 4 characters'
+[15:07:40][MessageBuffer][INFO] Message added to buffer [ Mod: default | Tag:  ] Content: '500 Invalid command. Must be 4 characters'
+[15:07:40][MessageBuffer][INFO] Message added to buffer [ Mod: default | Tag:  ] Content: '500 Invalid command. Must be 4 characters'
+[15:07:40][MessageBuffer][INFO] Message added to buffer [ Mod: default | Tag:  ] Content: '500 Invalid command. Must be 4 characters'
+[15:07:40][MessageBuffer][INFO] Message added to buffer [ Mod: default | Tag:  ] Content: '500 Invalid command. Must be 4 characters'
+[15:07:41][ProcessManager][INFO] PID (32752) removed from file
+[15:07:41][ExternalProgramRunner][INFO] (default) External application ends with exit code 0
+[15:07:42][WaitUntilKw][WARNING] Timeout.. Action was not invoked!
+[15:07:42][NATTContext][INFO] Data has been stored in to the variable 'var-1'. Data value: 
+[15:07:42][AssertEqualsKw][WARNING] Assertion failed. True was expected as the result. Condition: (Value of variable '' must contains expected text 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin mattis lacinia justo. Curabitur bibendum justo non orci. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.')
+[15:07:42][WaitKw][INFO] Waiting: 500 ms
+[15:07:42][TestSuiteKw][ERROR] Test suite 'Zakladní test odesílání Emailů' - Test case 'Test obsahu emailu 2' failed
+[15:07:43][MessageBuffer][INFO] Message buffer cleared
+[15:07:43][TestSuiteKw][INFO] Test case 'Test odeslání neplatného emailu' starts executing now
+[15:07:43][ExternalProgramRunner][INFO] (default) Run external app with command: java -jar app/build/libs/app.jar localhost 9999 sender@email.com recipient@email.com
+[15:07:43][ProcessManager][INFO] New PID (32775) added to file
+[15:07:43][WaitKw][INFO] Waiting: 3000 ms
+[15:07:43][ProcessManager][INFO] PID (32775) removed from file
+[15:07:43][ExternalProgramRunner][WARNING] (default) External application ends with error: 1
+[15:07:43][ExternalProgramRunner][WARNING] (default) Error message from external application: Usage: java -jar app.jar <host> <port> <from> <to> <subject> <body>
+
+[15:07:46][NATTContext][INFO] Data has been stored in to the variable 'var-1'. Data value: 0
+[15:07:46][WaitKw][INFO] Waiting: 500 ms
+[15:07:47][TestSuiteKw][INFO] Test suite 'Zakladní test odesílání Emailů' - Test case 'Test odeslání neplatného emailu' passed
+[15:07:47][MessageBuffer][INFO] Message buffer cleared
+[15:07:47][MessageBuffer][INFO] Message buffer cleared
+[15:07:47][MessageBuffer][INFO] Message buffer cleared
+[15:07:47][SMTPEmailServer][INFO] (server-1) SMTP email server [server-1] terminated
+[15:07:47][NATTCore][INFO] Test executing finished
+[15:07:47][NATTCore][INFO] Start generating test report
+[15:07:48][TestReportGenerator][INFO] Report saved to file
+[15:07:48][NATTCore][WARNING] Failed test cases: "Test odeslání emailu", "Test obsahu emailu 1", "Test obsahu emailu 2"
+[15:07:48][NATTCore][INFO] Final score: 1,000000
+[15:07:48][NATTCore][ERROR] Testing done. Leaving status: FAILED
