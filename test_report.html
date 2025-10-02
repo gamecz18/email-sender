@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Test report</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">říj 2, 2025 02:37:36 odp.</span></a>
+<a href="#"><span class="badge badge-primary">říj 2, 2025 03:02:48 odp.</span></a>
 </li>
 </ul>
 </div>
@@ -93,7 +93,7 @@
           <div class="test-detail">
             <p class="name">Test root initialization</p>
             <p class="text-sm">
-              <span>14:37:36 odp.</span> / <span>00:00:00:000</span>
+              <span>15:02:48 odp.</span> / <span>00:00:00:000</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -102,8 +102,8 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">Test root initialization</h5>
-<span class='badge badge-success'>10.02.2025 14:37:36</span>
-<span class='badge badge-danger'>10.02.2025 14:37:36</span>
+<span class='badge badge-success'>10.02.2025 15:02:48</span>
+<span class='badge badge-danger'>10.02.2025 15:02:48</span>
 <span class='badge badge-default'>00:00:00:000</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 </div>
@@ -115,7 +115,7 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>14:37:36</td>
+        <td>15:02:48</td>
         <td>
           <b>[Create Email Server]</b> port = 9999, name = "server-1"<br><font color="green">The module with name 'server-1' is running.</font>
         </td>
@@ -132,7 +132,7 @@
           <div class="test-detail">
             <p class="name">Test odeslání emailu</p>
             <p class="text-sm">
-              <span>14:37:36 odp.</span> / <span>00:00:00:000</span>
+              <span>15:02:48 odp.</span> / <span>00:00:00:000</span>
               <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
@@ -141,8 +141,8 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-fail">Test odeslání emailu</h5>
-<span class='badge badge-success'>10.02.2025 14:37:36</span>
-<span class='badge badge-danger'>10.02.2025 14:37:36</span>
+<span class='badge badge-success'>10.02.2025 15:02:48</span>
+<span class='badge badge-danger'>10.02.2025 15:02:48</span>
 <span class='badge badge-default'>00:00:00:000</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
 </div>
@@ -155,35 +155,35 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>14:37:36</td>
+        <td>15:02:48</td>
         <td>
           <b>[Run App]</b> "java -jar app/build/libs/app.jar localhost 9999 sender@email.com recipient@email.com Subject1 'Text Message'"
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log fail-bg">Fail</span></td>
-        <td>14:37:41</td>
+        <td>15:02:53</td>
         <td>
           <b>[Wait Until]</b> module_name = "server-1", time_out = 5000<br><font color="red">Timeout.. Action was not invoked!</font>
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>14:37:41</td>
+        <td>15:02:53</td>
         <td>
           <b>[Count And Store]</b> module_name = "server-1", var_name = "var-1"<br><font color="green">The following value has been stored in a variable named <b>[var-1]<b>: <b>'0'</b></font>
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log fail-bg">Fail</span></td>
-        <td>14:37:41</td>
+        <td>15:02:53</td>
         <td>
           <b>[Assert Equals]</b> value = 1.0, var_name = "var-1"<br><font color="red">Assertion failed. <b>True</b> was expected as the result. Condition: (Expected value <b>'1,000000'</b> must be same as the value of the variable <b>'0'</b>)</font>
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>14:37:42</td>
+        <td>15:02:53</td>
         <td>
           <b>[Wait]</b> 500
         </td>
@@ -200,7 +200,7 @@
           <div class="test-detail">
             <p class="name">Test obsahu emailu 1</p>
             <p class="text-sm">
-              <span>14:37:36 odp.</span> / <span>00:00:00:000</span>
+              <span>15:02:48 odp.</span> / <span>00:00:00:000</span>
               <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
@@ -209,8 +209,8 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-fail">Test obsahu emailu 1</h5>
-<span class='badge badge-success'>10.02.2025 14:37:36</span>
-<span class='badge badge-danger'>10.02.2025 14:37:36</span>
+<span class='badge badge-success'>10.02.2025 15:02:48</span>
+<span class='badge badge-danger'>10.02.2025 15:02:48</span>
 <span class='badge badge-default'>00:00:00:000</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
 </div>
@@ -223,35 +223,35 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>14:37:42</td>
+        <td>15:02:54</td>
         <td>
           <b>[Run App]</b> "java -jar app/build/libs/app.jar localhost 9999 sender@email.com recipient@email.com Subject1 'Text Message'"
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log fail-bg">Fail</span></td>
-        <td>14:37:47</td>
+        <td>15:02:59</td>
         <td>
           <b>[Wait Until]</b> module_name = "server-1", time_out = 5000<br><font color="red">Timeout.. Action was not invoked!</font>
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>14:37:47</td>
+        <td>15:02:59</td>
         <td>
           <b>[Store To Var]</b> mode = "equals", module_name = "server-1", tag = "Subject1", var_name = "var-1"<br><font color="green">The following value has been stored in a variable named <b>[var-1]</b>: <b>''</b></font>
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log fail-bg">Fail</span></td>
-        <td>14:37:47</td>
+        <td>15:02:59</td>
         <td>
           <b>[Assert String]</b> mode = "equals", expected = "Text Message", case_sensitive = true, var_name = "var-1"<br><font color="red">Assertion failed. <b>True</b> was expected as the result. Condition: (Value of variable <b>''</b> must equals expected text <b>'Text Message'</b>)</font>
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>14:37:48</td>
+        <td>15:03:00</td>
         <td>
           <b>[Wait]</b> 500
         </td>
@@ -268,7 +268,7 @@
           <div class="test-detail">
             <p class="name">Test obsahu emailu 2</p>
             <p class="text-sm">
-              <span>14:37:36 odp.</span> / <span>00:00:00:000</span>
+              <span>15:02:48 odp.</span> / <span>00:00:00:000</span>
               <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
@@ -277,8 +277,8 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-fail">Test obsahu emailu 2</h5>
-<span class='badge badge-success'>10.02.2025 14:37:36</span>
-<span class='badge badge-danger'>10.02.2025 14:37:36</span>
+<span class='badge badge-success'>10.02.2025 15:02:48</span>
+<span class='badge badge-danger'>10.02.2025 15:02:48</span>
 <span class='badge badge-default'>00:00:00:000</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
 </div>
@@ -291,35 +291,35 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>14:37:48</td>
+        <td>15:03:00</td>
         <td>
           <b>[Run App]</b> "java -jar app/build/libs/app.jar localhost 9999 sender@email.com recipient@email.com Subject1111 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin mattis lacinia justo. Curabitur bibendum justo non orci. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.'"
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log fail-bg">Fail</span></td>
-        <td>14:37:53</td>
+        <td>15:03:05</td>
         <td>
           <b>[Wait Until]</b> module_name = "server-1", time_out = 5000<br><font color="red">Timeout.. Action was not invoked!</font>
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>14:37:53</td>
+        <td>15:03:05</td>
         <td>
           <b>[Store To Var]</b> mode = "equals", module_name = "server-1", tag = "Subject1111", var_name = "var-1"<br><font color="green">The following value has been stored in a variable named <b>[var-1]</b>: <b>''</b></font>
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log fail-bg">Fail</span></td>
-        <td>14:37:53</td>
+        <td>15:03:05</td>
         <td>
           <b>[Assert String]</b> mode = "contains", expected = "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin mat..", case_sensitive = true, var_name = "var-1"<br><font color="red">Assertion failed. <b>True</b> was expected as the result. Condition: (Value of variable <b>''</b> must contains expected text <b>'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin mattis lacinia justo. Curabitur bibendum justo non orci. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.'</b>)</font>
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>14:37:54</td>
+        <td>15:03:06</td>
         <td>
           <b>[Wait]</b> 500
         </td>
@@ -336,7 +336,7 @@
           <div class="test-detail">
             <p class="name">Test odeslání neplatného emailu</p>
             <p class="text-sm">
-              <span>14:37:36 odp.</span> / <span>00:00:00:000</span>
+              <span>15:02:48 odp.</span> / <span>00:00:00:000</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -345,8 +345,8 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">Test odeslání neplatného emailu</h5>
-<span class='badge badge-success'>10.02.2025 14:37:36</span>
-<span class='badge badge-danger'>10.02.2025 14:37:36</span>
+<span class='badge badge-success'>10.02.2025 15:02:48</span>
+<span class='badge badge-danger'>10.02.2025 15:02:48</span>
 <span class='badge badge-default'>00:00:00:000</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=5</span>
 </div>
@@ -359,35 +359,35 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>14:37:55</td>
+        <td>15:03:07</td>
         <td>
           <b>[Run App]</b> "java -jar app/build/libs/app.jar localhost 9999 sender@email.com recipient@email.com"
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>14:37:58</td>
+        <td>15:03:10</td>
         <td>
           <b>[Wait]</b> 3000
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>14:37:58</td>
+        <td>15:03:10</td>
         <td>
           <b>[Count And Store]</b> module_name = "server-1", var_name = "var-1"<br><font color="green">The following value has been stored in a variable named <b>[var-1]<b>: <b>'0'</b></font>
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>14:37:58</td>
+        <td>15:03:10</td>
         <td>
           <b>[Assert Equals]</b> value = 0.0, var_name = "var-1"<br><font color="green">Assertion succeeded. <b>True</b> was expected as the result. Condition: (Expected value <b>'0,000000'</b> must be same as the value of the variable <b>'0'</b>)</font>
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>14:37:58</td>
+        <td>15:03:10</td>
         <td>
           <b>[Wait]</b> 500
         </td>
@@ -404,7 +404,7 @@
           <div class="test-detail">
             <p class="name">Result score</p>
             <p class="text-sm">
-              <span>14:37:59 odp.</span> / <span>00:00:00:000</span>
+              <span>15:03:11 odp.</span> / <span>00:00:00:000</span>
               <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
@@ -413,8 +413,8 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-fail">Result score</h5>
-<span class='badge badge-success'>10.02.2025 14:37:59</span>
-<span class='badge badge-danger'>10.02.2025 14:37:59</span>
+<span class='badge badge-success'>10.02.2025 15:03:11</span>
+<span class='badge badge-danger'>10.02.2025 15:03:11</span>
 <span class='badge badge-default'>00:00:00:000</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=6</span>
 </div>
@@ -426,14 +426,14 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log fail-bg">Fail</span></td>
-        <td>14:37:59</td>
+        <td>15:03:11</td>
         <td>
           Tested application for test suite 'Zakladní test odesílání Emailů' get 1,00 / 4,00 points
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>14:37:59</td>
+        <td>15:03:11</td>
         <td>
           TOTAL SCORE: 1,00 / 4,00 points
         </td>
@@ -486,28 +486,28 @@
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>14:37:36 odp.</td>
+<td>15:02:48 odp.</td>
 <td>
 <a href="#" class="linked" test-id='2' id='2'>Test odeslání emailu</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>14:37:36 odp.</td>
+<td>15:02:48 odp.</td>
 <td>
 <a href="#" class="linked" test-id='3' id='3'>Test obsahu emailu 1</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>14:37:36 odp.</td>
+<td>15:02:48 odp.</td>
 <td>
 <a href="#" class="linked" test-id='4' id='4'>Test obsahu emailu 2</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>14:37:36 odp.</td>
+<td>15:02:48 odp.</td>
 <td>
 <a href="#" class="linked" test-id='5' id='5'>Test odeslání neplatného emailu</a>
 </td>
@@ -529,13 +529,13 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>říj 2, 2025 02:37:36 odp.</h3>
+<h3>říj 2, 2025 03:02:48 odp.</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>říj 2, 2025 02:37:59 odp.</h3>
+<h3>říj 2, 2025 03:03:11 odp.</h3>
 </div></div>
 </div>
 <div class="col-md-3">

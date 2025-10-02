@@ -1,0 +1,85 @@
+[15:02:47][PluginLoader][INFO] No plugins found.
+[15:02:47][NATTCore][INFO] NATT CORE initialization done
+Version: 1.7.0 
+Configuration path: https://gitlab.com/ap5vs/test-config/email-sender-config/-/raw/main/test-config-1.yaml?ref_type=heads
+Configuration loading mode: FROM URL
+[15:02:47][NATTCore][INFO] Working directory path: /Users/ivanschober/Library/CloudStorage/SynologyDrive-home/Programovani/Java/email-sender
+[15:02:47][NATTCore][INFO] Start loading of the configuration file ...
+[15:02:48][NetworkIO][INFO] Yaml data has been loaded from network location (https://gitlab.com/ap5vs/test-config/email-sender-config/-/raw/main/test-config-1.yaml?ref_type=heads)
+[15:02:48][NATTCore][INFO] Configuration loading done
+[15:02:48][NATTCore][INFO] Start building test structure according to the configuration ...
+[15:02:48][NATTCore][INFO] Test structure ...
+[15:02:48][NATTCore][INFO] Test structure building done
+[15:02:48][NATTCore][INFO] Start test executing ...
+[15:02:48][TestReportGenerator][INFO] Extenet reports generated. Final report will be saved to file: test_report.html
+[15:02:48][NATTCore][INFO] Starts execution on the root keyword  ...
+[15:02:48][MessageBuffer][INFO] Message buffer created for module with name: server-1
+[15:02:48][SMTPEmailServer][INFO] (server-1) SMTP Email Server is listening on port: 9999
+[15:02:48][TestSuiteKw][INFO] Test case 'Test odeslání emailu' starts executing now
+[15:02:48][MessageBuffer][INFO] Message buffer created for module with name: default
+[15:02:48][ExternalProgramRunner][INFO] (default) Run external app with command: java -jar app/build/libs/app.jar localhost 9999 sender@email.com recipient@email.com Subject1 'Text Message'
+[15:02:48][ProcessManager][INFO] New PID (31408) added to file
+[15:02:48][WaitUntilKw][INFO] Waiting for action. Actions count: 1, Time out: 5000 ms
+[15:02:48][MessageBuffer][INFO] Message added to buffer [ Mod: default | Tag:  ] Content: '220 /127.0.0.1 GreenMail SMTP Service v1.6.1 ready'
+[15:02:48][MessageBuffer][INFO] Message added to buffer [ Mod: default | Tag:  ] Content: '250-/127.0.0.1'
+[15:02:48][MessageBuffer][INFO] Message added to buffer [ Mod: default | Tag:  ] Content: '250 AUTH PLAIN LOGIN'
+[15:02:49][ProcessManager][INFO] PID (31408) removed from file
+[15:02:49][ExternalProgramRunner][INFO] (default) External application ends with exit code 0
+[15:02:53][WaitUntilKw][WARNING] Timeout.. Action was not invoked!
+[15:02:53][NATTContext][INFO] Data has been stored in to the variable 'var-1'. Data value: 0
+[15:02:53][AssertEqualsKw][WARNING] Assertion failed. True was expected as the result. Condition: (Expected value '1,000000' must be same as the value of the variable '0')
+[15:02:53][WaitKw][INFO] Waiting: 500 ms
+[15:02:53][TestSuiteKw][ERROR] Test suite 'Zakladní test odesílání Emailů' - Test case 'Test odeslání emailu' failed
+[15:02:54][MessageBuffer][INFO] Message buffer cleared
+[15:02:54][TestSuiteKw][INFO] Test case 'Test obsahu emailu 1' starts executing now
+[15:02:54][ExternalProgramRunner][INFO] (default) Run external app with command: java -jar app/build/libs/app.jar localhost 9999 sender@email.com recipient@email.com Subject1 'Text Message'
+[15:02:54][ProcessManager][INFO] New PID (31431) added to file
+[15:02:54][WaitUntilKw][INFO] Waiting for action. Actions count: 1, Time out: 5000 ms
+[15:02:54][MessageBuffer][INFO] Message added to buffer [ Mod: default | Tag:  ] Content: '220 /127.0.0.1 GreenMail SMTP Service v1.6.1 ready'
+[15:02:55][MessageBuffer][INFO] Message added to buffer [ Mod: default | Tag:  ] Content: '250-/127.0.0.1'
+[15:02:55][MessageBuffer][INFO] Message added to buffer [ Mod: default | Tag:  ] Content: '250 AUTH PLAIN LOGIN'
+[15:02:55][ProcessManager][INFO] PID (31431) removed from file
+[15:02:55][ExternalProgramRunner][INFO] (default) External application ends with exit code 0
+[15:02:59][WaitUntilKw][WARNING] Timeout.. Action was not invoked!
+[15:02:59][NATTContext][INFO] Data has been stored in to the variable 'var-1'. Data value: 
+[15:02:59][AssertEqualsKw][WARNING] Assertion failed. True was expected as the result. Condition: (Value of variable '' must equals expected text 'Text Message')
+[15:02:59][WaitKw][INFO] Waiting: 500 ms
+[15:03:00][TestSuiteKw][ERROR] Test suite 'Zakladní test odesílání Emailů' - Test case 'Test obsahu emailu 1' failed
+[15:03:00][MessageBuffer][INFO] Message buffer cleared
+[15:03:00][TestSuiteKw][INFO] Test case 'Test obsahu emailu 2' starts executing now
+[15:03:00][ExternalProgramRunner][INFO] (default) Run external app with command: java -jar app/build/libs/app.jar localhost 9999 sender@email.com recipient@email.com Subject1111 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin mattis lacinia justo. Curabitur bibendum justo non orci. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.'
+[15:03:00][ProcessManager][INFO] New PID (31456) added to file
+[15:03:00][WaitUntilKw][INFO] Waiting for action. Actions count: 1, Time out: 5000 ms
+[15:03:00][MessageBuffer][INFO] Message added to buffer [ Mod: default | Tag:  ] Content: '220 /127.0.0.1 GreenMail SMTP Service v1.6.1 ready'
+[15:03:01][MessageBuffer][INFO] Message added to buffer [ Mod: default | Tag:  ] Content: '250-/127.0.0.1'
+[15:03:01][MessageBuffer][INFO] Message added to buffer [ Mod: default | Tag:  ] Content: '250 AUTH PLAIN LOGIN'
+[15:03:01][ProcessManager][INFO] PID (31456) removed from file
+[15:03:01][ExternalProgramRunner][INFO] (default) External application ends with exit code 0
+[15:03:05][WaitUntilKw][WARNING] Timeout.. Action was not invoked!
+[15:03:05][NATTContext][INFO] Data has been stored in to the variable 'var-1'. Data value: 
+[15:03:05][AssertEqualsKw][WARNING] Assertion failed. True was expected as the result. Condition: (Value of variable '' must contains expected text 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin mattis lacinia justo. Curabitur bibendum justo non orci. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.')
+[15:03:05][WaitKw][INFO] Waiting: 500 ms
+[15:03:06][TestSuiteKw][ERROR] Test suite 'Zakladní test odesílání Emailů' - Test case 'Test obsahu emailu 2' failed
+[15:03:06][MessageBuffer][INFO] Message buffer cleared
+[15:03:06][TestSuiteKw][INFO] Test case 'Test odeslání neplatného emailu' starts executing now
+[15:03:06][ExternalProgramRunner][INFO] (default) Run external app with command: java -jar app/build/libs/app.jar localhost 9999 sender@email.com recipient@email.com
+[15:03:07][ProcessManager][INFO] New PID (31480) added to file
+[15:03:07][WaitKw][INFO] Waiting: 3000 ms
+[15:03:07][MessageBuffer][INFO] Message added to buffer [ Mod: default | Tag:  ] Content: '220 /127.0.0.1 GreenMail SMTP Service v1.6.1 ready'
+[15:03:07][MessageBuffer][INFO] Message added to buffer [ Mod: default | Tag:  ] Content: '250-/127.0.0.1'
+[15:03:07][MessageBuffer][INFO] Message added to buffer [ Mod: default | Tag:  ] Content: '250 AUTH PLAIN LOGIN'
+[15:03:07][ProcessManager][INFO] PID (31480) removed from file
+[15:03:07][ExternalProgramRunner][INFO] (default) External application ends with exit code 0
+[15:03:10][NATTContext][INFO] Data has been stored in to the variable 'var-1'. Data value: 0
+[15:03:10][WaitKw][INFO] Waiting: 500 ms
+[15:03:10][TestSuiteKw][INFO] Test suite 'Zakladní test odesílání Emailů' - Test case 'Test odeslání neplatného emailu' passed
+[15:03:10][MessageBuffer][INFO] Message buffer cleared
+[15:03:11][MessageBuffer][INFO] Message buffer cleared
+[15:03:11][MessageBuffer][INFO] Message buffer cleared
+[15:03:11][SMTPEmailServer][INFO] (server-1) SMTP email server [server-1] terminated
+[15:03:11][NATTCore][INFO] Test executing finished
+[15:03:11][NATTCore][INFO] Start generating test report
+[15:03:11][TestReportGenerator][INFO] Report saved to file
+[15:03:11][NATTCore][WARNING] Failed test cases: "Test odeslání emailu", "Test obsahu emailu 1", "Test obsahu emailu 2"
+[15:03:11][NATTCore][INFO] Final score: 1,000000
+[15:03:11][NATTCore][ERROR] Testing done. Leaving status: FAILED

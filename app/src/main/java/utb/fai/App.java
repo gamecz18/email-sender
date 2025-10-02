@@ -7,8 +7,11 @@ public class App {
         
         try {
             
-            EmailSender sender = new EmailSender("smtp.utb.cz", 25);
-           sender.send("i_schober@utb.cz", "i_schober@utb.cz", "Email from Java", "Funguje to?\nSnad...");
+            String host = args[0];
+            int port = Integer.parseInt(args[1]);
+            
+            EmailSender sender = new EmailSender(host, port);
+           sender.send(args[3], args[4], args[5], args[6]);
             sender.close();
         } catch (Exception e) {
             e.printStackTrace();
