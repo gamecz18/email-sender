@@ -6,7 +6,7 @@ import java.io.*;
 public class EmailSender {
     /*
      * Constructor opens Socket to host/port. If the Socket throws an exception
-     * during opening,
+     * during opening,nj
      * the exception is not handled in the constructor.
      */
     public EmailSender(String host, int port) throws UnknownHostException, IOException {
