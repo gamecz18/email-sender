@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thunderstorm Glass - Bootstrap Website</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Animated Thunderstorm Background -->
+    <canvas id="thunderstorm-canvas"></canvas>
+
+    <!-- Main Content with Glassmorphism -->
+    <div class="container">
+        <div class="row min-vh-100 align-items-center justify-content-center">
+            <div class="col-lg-8">
+                <!-- Hero Glass Card -->
+                <div class="glass-card hero-card mb-4">
+                    <h1 class="display-3 fw-bold mb-3">Thunderstorm Glass</h1>
+                    <p class="lead mb-4">Experience the power of nature with stunning glassmorphism design</p>
+                    <div class="d-flex gap-3">
+                        <button class="btn btn-glass-primary">Get Started</button>
+                        <button class="btn btn-glass-secondary">Learn More</button>
+                    </div>
+                </div>
+
+                <!-- Feature Cards -->
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <div class="glass-card feature-card">
+                            <div class="icon-box mb-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-lightning-charge" viewBox="0 0 16 16">
+                                    <path d="M11.251.068a.5.5 0 0 1 .227.58L9.677 6.5H13a.5.5 0 0 1 .364.843l-8 8.5a.5.5 0 0 1-.842-.49L6.323 9.5H3a.5.5 0 0 1-.364-.843l8-8.5a.5.5 0 0 1 .615-.09z"/>
+                                </svg>
+                            </div>
+                            <h3 class="h5 mb-2">Dynamic Lightning</h3>
+                            <p class="mb-0">Real-time generated thunderstorm effects that respond to your interactions</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="glass-card feature-card">
+                            <div class="icon-box mb-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-droplet" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M7.21.8C7.69.295 8 0 8 0c.109.363.26.715.444 1.053.205.374.478.785.721 1.075C10.37 3.657 11 4.375 11 6.5c0 2.485-2.015 4.5-4.5 4.5S2 8.985 2 6.5c0-2.125.63-2.843 1.835-4.372.243-.29.516-.701.72-1.075.185-.338.336-.69.445-1.053zM8 3s-1.25 1.25-1.25 3.5c0 1.378 1.122 2.5 2.5 2.5s2.5-1.122 2.5-2.5C11.75 4.25 8 3 8 3z"/>
+                                </svg>
+                            </div>
+                            <h3 class="h5 mb-2">Liquid Glass Design</h3>
+                            <p class="mb-0">Beautiful frosted glass effect with smooth animations and transparency</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="glass-card feature-card">
+                            <div class="icon-box mb-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-bootstrap" viewBox="0 0 16 16">
+                                    <path d="M5.062 12h3.475c1.804 0 2.888-.908 2.888-2.396 0-1.102-.761-1.916-1.904-2.034v-.1c.832-.14 1.482-.93 1.482-1.816 0-1.3-.955-2.11-2.542-2.11H5.062V12zm1.313-4.875V4.658h1.78c.973 0 1.542.457 1.542 1.237 0 .802-.604 1.23-1.764 1.23H6.375zm0 3.762V8.162h1.822c1.236 0 1.887.463 1.887 1.348 0 .896-.627 1.377-1.811 1.377H6.375z"/>
+                                    <path d="M0 4a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v8a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V4zm4-3a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V4a3 3 0 0 0-3-3H4z"/>
+                                </svg>
+                            </div>
+                            <h3 class="h5 mb-2">Bootstrap 5</h3>
+                            <p class="mb-0">Built with the latest Bootstrap framework for responsive design</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="glass-card feature-card">
+                            <div class="icon-box mb-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-phone" viewBox="0 0 16 16">
+                                    <path d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h6zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H5z"/>
+                                    <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                                </svg>
+                            </div>
+                            <h3 class="h5 mb-2">Fully Responsive</h3>
+                            <p class="mb-0">Looks amazing on all devices from mobile to desktop screens</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Info Card -->
+                <div class="glass-card info-card mt-4">
+                    <h2 class="h4 mb-3">About This Design</h2>
+                    <p class="mb-2">This website features:</p>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">✨ Real-time animated thunderstorm with lightning bolts</li>
+                        <li class="mb-2">🪟 Glassmorphism (liquid glass) UI components</li>
+                        <li class="mb-2">⚡ Canvas-based particle system for rain and lightning</li>
+                        <li class="mb-2">🎨 Modern gradient background with storm clouds</li>
+                        <li class="mb-2">📱 Fully responsive Bootstrap 5 layout</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom Thunderstorm JS -->
+    <script src="storm.js"></script>
+</body>
+</html>
